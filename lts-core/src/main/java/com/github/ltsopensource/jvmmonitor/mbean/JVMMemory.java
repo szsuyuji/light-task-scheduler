@@ -32,6 +32,7 @@ public class JVMMemory implements JVMMemoryMBean {
                     || "Perm Gen".equals(item.getName()) 
                     || "PS Perm Gen".equals(item.getName()) 
                     || "G1 Perm Gen".equals(item.getName()) 
+                    || "Metaspace".equals(item.getName())
                     ) {
                 permGenMxBean = item;
             } else if ("CMS Old Gen".equals(item.getName()) 
